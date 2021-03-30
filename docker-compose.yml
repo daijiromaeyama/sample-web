@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  frontend:
+    build: .
+    command: yarn dev
+    volumes:
+      - .:/app
+    ports:
+      - "8000:3000"
